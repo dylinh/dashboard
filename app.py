@@ -77,4 +77,4 @@ def update_year_stats(selected_year):
     return f"In {selected_year}, {row['Winners']} won and {row['Runners-up']} was the runner-up."
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False, host="0.0.0.0", port=8080)
